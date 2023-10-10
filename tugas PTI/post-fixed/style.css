@@ -70,6 +70,21 @@ body {
   transition: color 0.5s ease-in-out;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.bgcontD {
+  background-color: rgba(0, 0, 0, 0.5);
+} 
+
+.bgcontL {
+  background-color: rgba(0, 0, 0, 0);
+} 
+
 .banner {
   width: 610px;
   height: 104px;
