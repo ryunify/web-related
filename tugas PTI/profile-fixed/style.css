@@ -175,6 +175,35 @@ body {
   background-attachment: fixed;
 }
 
+.head-banner{
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.head-banner-wrapper{
+  display: flex;
+  justify-content: space-between; 
+  width: 90%;
+  margin: 0 auto;
+}
+
+.username-banner{
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.appearances-banner{
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  border-radius: 13px;
+  padding: 0 7px;
+}
+
 .user-banner-space {
   height: 65px;
   position: relative;
