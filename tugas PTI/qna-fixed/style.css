@@ -438,4 +438,24 @@ body {
   justify-content: space-evenly;
 }
 
+.downvote {
+  width: 20px;
+  height: 20px;
+  border:2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upvote {
+  width: 60px;
+  height: 20px;
+  border:2px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 @import url("https://fonts.cdnfonts.com/css/made-sunflower");
