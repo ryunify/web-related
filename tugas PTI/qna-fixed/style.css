@@ -154,6 +154,10 @@ body {
   margin-left: 15px;
 }
 
+.navbar-content ul li a {
+  margin-left: 15px;
+}
+
 .discover {
   height: 100vh;
   width: 372px;

@@ -386,6 +386,10 @@ body {
   margin-left: 15px;
 }
 
+.navbar-content ul li a {
+  margin-left: 15px;
+}
+
 .navbar-footer {
   height: 20vh;
   display: flex;
