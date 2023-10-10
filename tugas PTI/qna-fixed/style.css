@@ -71,11 +71,11 @@ body.dark-mode {
 
 .bgcontD {
   background-color: rgba(0, 0, 0, 0.9);
-} 
+}
 
 .bgcontL {
   background-color: rgba(0, 0, 0, 0);
-} 
+}
 
 .love {
   cursor: pointer;
@@ -88,6 +88,9 @@ body.dark-mode {
 }
 
 body {
+  background-image: url(../supply/background-qna.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   overflow: hidden;
