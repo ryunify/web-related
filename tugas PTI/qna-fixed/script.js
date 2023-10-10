@@ -3,15 +3,15 @@ let isImageBackground = true;
 function toggleMode() {
   var body = document.body;
 
-  if (isImageBackground) {
-    body.style.backgroundImage = "none";
-    body.style.backgroundColor = "black";
-  } else {
-    body.style.backgroundImage = "url(../supply/kobo scene 5 v2.png)";
-    body.style.backgroundColor = "initial";
-  }
+  let cont = document.querySelector(".container");
 
-  isImageBackground = !isImageBackground;
+  if (cont.classList.contains("bgcontL")) {
+    cont.classList.add("bgcontD");
+    cont.classList.remove("bgcontL");
+  } else {
+    cont.classList.add("bgcontL");
+    cont.classList.remove("bgcontD");
+  }
 
   var body = document.body;
   body.classList.toggle("dark-mode");
