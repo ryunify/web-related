@@ -7,6 +7,42 @@
   width: 0;
 }
 
+.discover-default {
+  background-color: white;
+}
+
+.discover-alternative {
+  background-color: #272727;
+}
+
+body.light-mode {
+  color: black;
+}
+
+body.dark-mode {
+  color: white;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon-default {
+  fill: black;
+}
+
+.icon-alternative {
+  fill: white;
+}
+
+.text-default {
+  color: #c58f44;
+}
+
+.text-alternative {
+  color: #efd1a6;
+}
+
 body {
   background-image: url(../supply/kobo\ scene\ 1\ cut.png);
   background-attachment: fixed;
@@ -15,6 +51,8 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Poppins";
+  transition: background 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 .banner {
