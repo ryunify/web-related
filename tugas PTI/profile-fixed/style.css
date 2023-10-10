@@ -7,6 +7,29 @@
   width: 0;
 }
 
+.garisL {
+  display: none;
+}
+
+.garisD {
+  display: block;
+}
+
+.garis {
+  width: 71%;
+  height: 6px;
+  margin-left: 60px;
+  background-color: #efd1a6;
+  border-radius: 6px;
+  border: none;
+}
+
+.qwerty {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 .container {
   text-align: center;
   margin-top: 20px;

@@ -124,6 +124,18 @@ function toggleMode() {
       text2.classList.add("text2-default");
     }
   });
+
+  var tampilGaris = document.querySelectorAll(".garis");
+
+  tampilGaris.forEach(function (garis) {
+    if (garis.classList.contains("garisL")) {
+      garis.classList.remove("garisL");
+      garis.classList.add("garisD");
+    } else {
+      garis.classList.remove("garisD");
+      garis.classList.add("garisL");
+    }
+  });
 }
 
 const region = document.querySelector(".region");
