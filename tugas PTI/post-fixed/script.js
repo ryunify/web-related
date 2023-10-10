@@ -100,6 +100,30 @@ function toggleMode() {
       e.classList.remove("break");
     }
   });
+
+  var points = document.querySelectorAll(".point");
+
+  points.forEach(function (point) {
+    if (point.classList.contains("point-default")) {
+      point.classList.remove("point-default");
+      point.classList.add("point-alternative");
+    } else {
+      point.classList.remove("point-alternative");
+      point.classList.add("point-default");
+    }
+  });
+
+  var texts2 = document.querySelectorAll(".text-change2");
+
+  texts2.forEach(function (text2) {
+    if (text2.classList.contains("text2-default")) {
+      text2.classList.remove("text2-default");
+      text2.classList.add("text2-alternative");
+    } else {
+      text2.classList.remove("text2-alternative");
+      text2.classList.add("text2-default");
+    }
+  });
 }
 
 const region = document.querySelector(".region");
