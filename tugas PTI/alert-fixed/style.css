@@ -7,6 +7,14 @@
   width: 0;
 }
 
+.point-default {
+  background-color: #693500;
+}
+
+.point-alternative {
+  background-color: #efd1a6;
+}
+
 .discover-default {
   background-color: white;
 }
@@ -79,7 +87,6 @@ body {
 .banner .point {
   width: 75px;
   height: 5px;
-  background-color: #693500;
   border-radius: 10px 10px 0 0;
 }
 

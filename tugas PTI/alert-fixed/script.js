@@ -59,4 +59,16 @@ function toggleMode() {
       text.classList.add("text-default");
     }
   });
+
+  var points = document.querySelectorAll(".point");
+
+  points.forEach(function (point) {
+    if (point.classList.contains("point-default")) {
+      point.classList.remove("point-default");
+      point.classList.add("point-alternative");
+    } else {
+      point.classList.remove("point-alternative");
+      point.classList.add("point-default");
+    }
+  });
 }
