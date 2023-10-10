@@ -68,11 +68,33 @@ body.dark-mode {
 
 .bgcontD {
   background-color: rgba(0, 0, 0, 0.9);
-} 
+}
 
 .bgcontL {
   background-color: rgba(0, 0, 0, 0);
-} 
+}
+
+.love {
+  cursor: pointer;
+  stroke: black;
+}
+
+.break {
+  stroke: white;
+  cursor: pointer;
+}
+
+.loveOnL {
+  fill: black;
+}
+
+.loveOnD {
+  fill: white;
+}
+
+.loveOff {
+  fill: transparent;
+}
 
 body {
   background-image: url(../supply/kobo\ scene\ 1\ cut.png);
