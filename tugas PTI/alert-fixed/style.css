@@ -151,8 +151,7 @@ body {
 .navbar {
   height: 100vh;
   width: 240px;
-  margin-left: 72px;
-  border-right: 2px solid black;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .navbar-head {
@@ -203,9 +202,8 @@ body {
 .discover {
   height: 100vh;
   width: 372px;
-  margin-right: 72px;
   /* background-color:red; */
-  border-left: 2px solid black;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,6 +221,7 @@ body {
   display: flex;
   align-items: center;
   border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .discover-input svg {
@@ -250,6 +249,7 @@ body {
   background-color: white;
   border-radius: 15px;
   margin-top: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .discover-notifications-wrapper {
@@ -276,6 +276,7 @@ body {
   min-height: 397px;
   background-color: white;
   border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .discover-acc-wrapper {

@@ -221,6 +221,7 @@ body {
   display: flex;
   align-items: center;
   border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .discover-input svg {
@@ -252,6 +253,7 @@ body {
   background-color: white;
   border-radius: 15px;
   margin-top: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .discover-notifications-wrapper {
@@ -278,6 +280,7 @@ body {
   min-height: 397px;
   background-color: white;
   border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .discover-acc-wrapper {
