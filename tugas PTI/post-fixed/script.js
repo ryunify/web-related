@@ -1,4 +1,4 @@
-var isImageBackground = true;
+let isImageBackground = true;
 
 function toggleMode() {
   var body = document.body;
@@ -7,7 +7,7 @@ function toggleMode() {
     body.style.backgroundImage = "none";
     body.style.backgroundColor = "black";
   } else {
-    body.style.backgroundImage = "url(../supply/background-post.png)";
+    body.style.backgroundImage = "url(../supply/kobo\ scene\ 5\ v2.png)";
     body.style.backgroundColor = "initial";
   }
 
