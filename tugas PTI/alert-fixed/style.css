@@ -264,7 +264,6 @@ body {
 .discover-input {
   width: 297px;
   height: 38px;
-  background-color: white;
   display: flex;
   align-items: center;
   border-radius: 15px;
@@ -293,7 +292,6 @@ body {
 .discover-notifications {
   width: 297px;
   min-height: 102px;
-  background-color: white;
   border-radius: 15px;
   margin-top: 10px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
@@ -306,7 +304,6 @@ body {
 .head-notifications-text {
   /* margin-top:10px; */
   font-size: 23px;
-  color: #c58f44;
   padding-left: 10px;
 }
 
@@ -321,7 +318,6 @@ body {
   width: 297px;
   margin: 25px;
   min-height: 397px;
-  background-color: white;
   border-radius: 15px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
