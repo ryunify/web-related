@@ -77,6 +77,16 @@ body.dark-mode {
   background-color: rgba(0, 0, 0, 0);
 } 
 
+.love {
+  cursor: pointer;
+  stroke: black;
+}
+
+.break {
+  stroke: white;
+  cursor: pointer;
+}
+
 body {
   display: flex;
   justify-content: center;

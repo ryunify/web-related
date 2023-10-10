@@ -83,4 +83,27 @@ function toggleMode() {
       text2.classList.add("text2-default");
     }
   });
+
+  let love = document.querySelectorAll(".love");
+  let stop = document.querySelectorAll(".break");
+
+  love.forEach(function (e) {
+    if (e.classList.contains("love")) {
+      e.classList.add("break");
+      e.classList.remove("love");
+    } else {
+      e.classList.add("love");
+      e.classList.remove("break");
+    }
+  });
+
+  stop.forEach(function (e) {
+    if (e.classList.contains("love")) {
+      e.classList.add("break");
+      e.classList.remove("love");
+    } else {
+      e.classList.add("love");
+      e.classList.remove("break");
+    }
+  });
 }
