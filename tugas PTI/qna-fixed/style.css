@@ -52,10 +52,12 @@ body.dark-mode {
 
 .icon-default {
   fill: black;
+  border-color: black;
 }
 
 .icon-alternative {
   fill: white;
+  border-color: white;
 }
 
 .text-default {
@@ -441,7 +443,7 @@ body {
 .downvote {
   width: 20px;
   height: 20px;
-  border:2px solid black;
+  border:2px solid;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -451,7 +453,7 @@ body {
 .upvote {
   width: 60px;
   height: 20px;
-  border:2px solid black;
+  border:2px solid;
   border-radius: 20px;
   display: flex;
   align-items: center;
