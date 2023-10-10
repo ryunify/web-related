@@ -59,18 +59,76 @@ function toggleMode() {
       text.classList.add("text-default");
     }
   });
+
+  let love = document.querySelectorAll(".love");
+  let stop = document.querySelectorAll(".break");
+
+  love.forEach(function (e) {
+    if (e.classList.length > 1) {
+      if (e.classList.contains("loveOnL")) {
+        e.classList.add("loveOnD");
+        e.classList.remove("loveOnL");
+      } else {
+        e.classList.add("loveOnL");
+        e.classList.remove("loveOnD");
+      }
+    }
+    if (e.classList.contains("love")) {
+      e.classList.add("break");
+      e.classList.remove("love");
+    } else {
+      e.classList.add("love");
+      e.classList.remove("break");
+    }
+  });
+
+  stop.forEach(function (e) {
+    if (e.classList.length > 1) {
+      if (e.classList.contains("loveOnL")) {
+        e.classList.add("loveOnD");
+        e.classList.remove("loveOnL");
+      } else {
+        e.classList.add("loveOnL");
+        e.classList.remove("loveOnD");
+      }
+    }
+    if (e.classList.contains("love")) {
+      e.classList.add("break");
+      e.classList.remove("love");
+    } else {
+      e.classList.add("love");
+      e.classList.remove("break");
+    }
+  });
 }
 
 const region = document.querySelector(".region");
 
-      region.addEventListener("click", function (e) {
-        if (e.target.classList.contains("love")) {
-          if (e.target.classList.contains("loveOn")) {
-            e.target.classList.add("loveOff");
-            e.target.classList.remove("loveOn");
-          } else {
-            e.target.classList.remove("loveOff");
-            e.target.classList.add("loveOn");
-          }
-        }
-      });
+region.addEventListener("click", function (e) {
+  if (e.target.classList.length > 1) {
+    if (e.target.classList.contains("love")) {
+      if (e.target.classList.contains("loveOnL")) {
+        e.target.classList.add("loveOff");
+        e.target.classList.remove("loveOnL");
+      } else {
+        e.target.classList.remove("loveOff");
+        e.target.classList.add("loveOnL");
+      }
+      if (e.target.classList.contains("loveOnD")) {
+        e.target.classList.remove("loveOnD");
+      }
+    }
+    if (e.target.classList.contains("break")) {
+      if (e.target.classList.contains("loveOnD")) {
+        e.target.classList.add("loveOff");
+        e.target.classList.remove("loveOnD");
+      } else {
+        e.target.classList.remove("loveOff");
+        e.target.classList.add("loveOnD");
+      }
+      if (e.target.classList.contains("loveOnL")) {
+        e.target.classList.remove("loveOnL");
+      }
+    }
+  }
+});

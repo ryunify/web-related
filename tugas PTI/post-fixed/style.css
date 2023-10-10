@@ -37,10 +37,20 @@ body.dark-mode {
 
 .love {
   cursor: pointer;
+  stroke: black;
 }
 
-.loveOn {
+.break {
+  stroke: white;
+  cursor: pointer;
+}
+
+.loveOnL {
   fill: black;
+}
+
+.loveOnD {
+  fill: white;
 }
 
 .loveOff {
