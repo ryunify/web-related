@@ -59,6 +59,21 @@ body.dark-mode {
   color: #efd1a6;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.bgcontD {
+  background-color: rgba(0, 0, 0, 0.9);
+} 
+
+.bgcontL {
+  background-color: rgba(0, 0, 0, 0);
+} 
+
 body {
   background-image: url(../supply/kobo\ scene\ 1\ cut.png);
   background-attachment: fixed;
