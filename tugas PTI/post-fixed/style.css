@@ -35,6 +35,18 @@ body.dark-mode {
   fill: white;
 }
 
+.love {
+  cursor: pointer;
+}
+
+.loveOn {
+  fill: black;
+}
+
+.loveOff {
+  fill: transparent;
+}
+
 body {
   background-image: url(../supply/kobo\ scene\ 5\ v2.png);
   background-attachment: fixed;

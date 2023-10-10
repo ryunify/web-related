@@ -60,3 +60,17 @@ function toggleMode() {
     }
   });
 }
+
+const region = document.querySelector(".region");
+
+      region.addEventListener("click", function (e) {
+        if (e.target.classList.contains("love")) {
+          if (e.target.classList.contains("loveOn")) {
+            e.target.classList.add("loveOff");
+            e.target.classList.remove("loveOn");
+          } else {
+            e.target.classList.remove("loveOff");
+            e.target.classList.add("loveOn");
+          }
+        }
+      });
