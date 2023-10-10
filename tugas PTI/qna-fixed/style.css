@@ -10,6 +10,14 @@ body {
   width: 0;
 }
 
+.text2-default {
+  color: black;
+}
+
+.text2-alternative {
+  color: white;
+}
+
 .point-default {
   background-color: #693500;
 }
@@ -278,7 +286,6 @@ body {
 
 .banner a {
   text-decoration: none;
-  color: #000000;
 }
 
 .banner .point {
