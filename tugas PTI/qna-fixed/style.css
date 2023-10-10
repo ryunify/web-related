@@ -6,6 +6,10 @@ body {
   font-family: "Poppins";
 }
 
+a {
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }

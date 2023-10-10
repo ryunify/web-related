@@ -7,6 +7,10 @@
   width: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .text2-default {
   color: black;
 }
