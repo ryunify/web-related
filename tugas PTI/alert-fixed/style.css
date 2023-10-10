@@ -33,6 +33,11 @@ body {
   margin: auto;
 }
 
+.banner a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .banner .point {
   width: 75px;
   height: 5px;
