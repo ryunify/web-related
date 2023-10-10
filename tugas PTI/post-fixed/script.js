@@ -7,7 +7,7 @@ function toggleMode() {
     body.style.backgroundImage = "none";
     body.style.backgroundColor = "black";
   } else {
-    body.style.backgroundImage = "url(../supply/kobo\ scene\ 5\ v2.png)";
+    body.style.backgroundImage = "url(../supply/kobo scene 5 v2.png)";
     body.style.backgroundColor = "initial";
   }
 
@@ -33,6 +33,30 @@ function toggleMode() {
     } else {
       icon.classList.remove("icon-alternative");
       icon.classList.add("icon-default");
+    }
+  });
+
+  var discovers = document.querySelectorAll(".discover-change");
+
+  discovers.forEach(function (discover) {
+    if (discover.classList.contains("discover-default")) {
+      discover.classList.remove("discover-default");
+      discover.classList.add("discover-alternative");
+    } else {
+      discover.classList.remove("discover-alternative");
+      discover.classList.add("discover-default");
+    }
+  });
+
+  var texts = document.querySelectorAll(".text-change");
+
+  texts.forEach(function (text) {
+    if (text.classList.contains("text-default")) {
+      text.classList.remove("text-default");
+      text.classList.add("text-alternative");
+    } else {
+      text.classList.remove("text-alternative");
+      text.classList.add("text-default");
     }
   });
 }
