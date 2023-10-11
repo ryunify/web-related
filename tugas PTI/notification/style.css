@@ -8,18 +8,20 @@
 }
 
 .head-text:hover {
-  background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, purple, pink);
+  display: inline-block;
+  background-image: linear-gradient(to left, red, orange, yellow, green, aqua, blue, purple);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  animation: rainbow 2.5s infinite;
+  animation: rainbow 2s infinite linear;
 }
 
 @keyframes rainbow {
   0% {
-    background-position: 0% 50%;
+    background-position: -100% 0%;
   }
-  50% {
+  100% {
     background-position: 100% 0%;
   }
 }
