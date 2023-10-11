@@ -458,6 +458,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 
 @import url("https://fonts.cdnfonts.com/css/made-sunflower");

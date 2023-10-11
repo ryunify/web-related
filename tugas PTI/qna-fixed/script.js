@@ -108,3 +108,8 @@ function toggleMode() {
   });
 }
 
+const region = document.querySelector(".region");
+
+region.addEventListener("click", (e) => {
+  e.target.childNodes[3].innerHTML++;
+});
