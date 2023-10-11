@@ -342,6 +342,10 @@ body {
   font-size: 20px;
 }
 
+.input-search:focus {
+  outline: none;
+}
+
 .discover-content {
   display: flex;
   flex-direction: column;
