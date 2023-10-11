@@ -7,6 +7,23 @@
   width: 0;
 }
 
+.head-text:hover {
+  background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, purple, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: rainbow 2.5s infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+}
+
 a {
   text-decoration: none;
 }
