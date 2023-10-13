@@ -289,6 +289,47 @@ body {
 
 .banner .nav-banner {
   text-align: center;
+  height: 50%;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-banner {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-banner::before {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.142);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 0px;
+  z-index: -1;
+}
+
+.nav-banner:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+.nav-banner::before {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.142);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 0px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
 }
 
 .region {
