@@ -97,7 +97,7 @@ body.dark-mode {
 }
 
 body {
-  background-image: url(../supply/background-qna.jpeg);
+  background-image: url(supply/background-qna.jpeg);
   background-attachment: fixed;
   background-size: cover;
   /* background-color: aqua; */
@@ -218,7 +218,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-image: url(../supply/kobo\ scene\ 1\ cut.png);
+  background-image: url(supply/kobo\ scene\ 1\ cut.png);
   background-attachment: fixed;
   background-size: cover;
   border-radius: 10px;
