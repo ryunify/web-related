@@ -156,13 +156,4 @@ region.addEventListener("click", function (e) {
     }
   }
 
-  if (e.target.classList.contains("dropBtn")) {
-    if (e.target.classList.contains("btnOn")) {
-      e.target.classList.remove("btnOn");
-      e.target.nextElementSibling.style.display = "flex";
-    } else {
-      e.target.classList.add("btnOn");
-      e.target.nextElementSibling.style.display = "none";
-    }
-  }
 });
