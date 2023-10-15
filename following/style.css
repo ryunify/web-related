@@ -396,6 +396,10 @@ body {
   margin-left: 15px;
 }
 
+.navbar-content a {
+  transition: color 0.5s ease-in-out;
+}
+
 .navbar-footer {
   height: 20vh;
   display: flex;

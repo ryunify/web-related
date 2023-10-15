@@ -20,6 +20,7 @@ function toggleMode() {
   }
 
   let cont = document.querySelector(".container");
+  let button = document.querySelectorAll("button");
 
   if (cont.classList.contains("bgcontL")) {
     cont.classList.add("bgcontD");
@@ -28,6 +29,14 @@ function toggleMode() {
     cont.classList.add("bgcontL");
     cont.classList.remove("bgcontD");
   }
+
+  button.forEach(function (e) {
+    if (cont.classList.contains("bgcontL")) {
+      e.style.color = "black";
+    } else {
+      e.style.color = "white";
+    }
+  });
 
   var body = document.body;
   body.classList.toggle("dark-mode");
@@ -145,6 +154,7 @@ region.addEventListener("click", (e) => {
     } else {
       e.target.innerHTML--;
       e.target.classList.toggle("upvoteOn");
+      e.target.style.fontWeight = "300";
     }
 } 
 });
