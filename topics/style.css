@@ -1,0 +1,568 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.head-text:hover {
+  display: inline-block;
+  background-image: linear-gradient(to left, red, orange, yellow, green, aqua, blue, purple);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: rainbow 2s infinite linear;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: -100% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.text2-default {
+  color: black;
+}
+
+.text2-alternative {
+  color: white;
+}
+
+.point-default {
+  background-color: #693500;
+}
+
+.point-alternative {
+  background-color: #efd1a6;
+}
+
+.discover-default {
+  background-color: white;
+}
+
+.discover-alternative {
+  background-color: #272727;
+}
+
+body.light-mode {
+  color: black;
+}
+
+body.dark-mode {
+  color: white;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon-default {
+  fill: black;
+}
+
+.icon-alternative {
+  fill: white;
+}
+
+.love {
+  cursor: pointer;
+  stroke: black;
+}
+
+.break {
+  stroke: white;
+  cursor: pointer;
+}
+
+.loveOnL {
+  fill: black;
+}
+
+.loveOnD {
+  fill: white;
+}
+
+.loveOff {
+  fill: transparent;
+}
+
+body {
+  background-image: url(../supply/background-qna.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: aqua; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  transition: background 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.bgcontD {
+  background-color: rgba(0, 0, 0, 0.85);
+} 
+
+.bgcontL {
+  background-color: rgba(255, 255, 255, 0);
+} 
+
+.banner {
+  width: 610px;
+  height: 104px;
+  background-color: rgba(255, 181, 106, 0.35);
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  margin: auto;
+}
+
+.banner a {
+  text-decoration: none;
+}
+
+.banner .point {
+  width: 75px;
+  height: 5px;
+  border-radius: 10px 10px 0 0;
+}
+
+.banner .nav-banner {
+  text-align: center;
+  height: 50%;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+/* .banner .nav-banner:hover{
+  background-color: #ffffff34;
+  border-radius: 5px;
+} */
+
+.nav-banner {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-banner::before {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.142);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 0px;
+  z-index: -1;
+}
+
+.nav-banner:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+.nav-banner::before {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.142);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 0px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.region {
+  overflow-y: scroll;
+  width: 610px;
+  height: 664px;
+  margin: auto;
+  box-sizing: border-box;
+  padding-top: 28px;
+}
+
+.following-container {
+  width: 535px;
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.following-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.following-container::-webkit-scrollbar-thumb {
+  background: transparent; /* Make scrollbar thumb transparent */
+}
+
+.scrolling-wrapper {
+  display: inline-block;
+}
+
+.following-item {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.following-item {
+  width: 65px;
+  height: 87px;
+}
+
+.followed-username {
+  margin-top: 5px;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.followed-user {
+  background-color: #d9d9d9;
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+}
+
+.user {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  margin: 0 30px;
+}
+
+.region .search-region .input-search-region {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.region .search-region .input-search-region input {
+  width: 90%;
+  height: 90%;
+  border: 0;
+  margin-left: 10px;
+  font-weight: 500;
+  outline: none;
+  font-size: 20px;
+}
+
+.article {
+  width: 535px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+}
+
+.article .user-article {
+  width: 535px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-image: url(../supply/kobo\ scene\ 1\ cut.png);
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 0 20px 0 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.article .username {
+  display: flex;
+  color: #d4d4d4;
+}
+
+.article .id-user {
+  display: flex;
+  align-items: center;
+}
+
+.article .id-user .id {
+  margin-right: 10px;
+  color: white;
+}
+
+.footer-article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.footer-article .attach {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar {
+  height: 100vh;
+  width: 240px;
+  margin-left: 72px;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-head {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-text {
+  font-size: 30px;
+  font-family: "MADE Sunflower", sans-serif;
+}
+
+.navbar-content {
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-content ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-content ul li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.navbar-content ul li p {
+  margin-left: 15px;
+}
+
+.navbar-content ul li a {
+  margin-left: 15px;
+}
+
+.navbar-footer {
+  height: 20vh;
+  display: flex;
+  align-items: end;
+  flex-direction: row;
+}
+
+.navbar-footer ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-footer ul li p {
+  margin-left: 15px;
+}
+
+.discover {
+  height: 100vh;
+  width: 372px;
+  margin-right: 72px;
+  /* background-color:red; */
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.discover-header {
+  margin: 15px;
+}
+
+.discover-input {
+  width: 297px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.discover-input svg {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.input-search {
+  width: 230px;
+  height: 38px;
+  border: none;
+  font-size: 20px;
+}
+
+.input-search:focus {
+  outline: none;
+}
+
+.discover-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover-notifications {
+  width: 297px;
+  min-height: 102px;
+  border-radius: 15px;
+  margin-top: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.discover-notifications-wrapper {
+  margin: 17px;
+}
+
+.head-notifications-text {
+  /* margin-top:10px; */
+  font-size: 23px;
+  padding-left: 10px;
+}
+
+.text-default {
+  color: #c58f44;
+}
+
+.text-alternative {
+  color: #efd1a6;
+}
+
+.notifications-text {
+  margin-top: 17px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: gray;
+}
+
+.discover-acc {
+  width: 297px;
+  margin: 25px;
+  min-height: 397px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.discover-acc-wrapper {
+  margin: 17px;
+}
+
+.profile-wrapper {
+  margin-top: 7px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.profile-img {
+  width: 37px;
+  height: 37px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.profile-text {
+  margin-left: 10px;
+}
+
+.profile-username {
+  display: flex;
+  align-items: center;
+}
+
+.disname {
+  font-size: 15;
+}
+
+.username {
+  font-size: 13px;
+}
+
+.profile-details {
+  font-size: 12px;
+}
+
+.discover-footer {
+  width: 297px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.discover-footer-wrapper {
+  height: 150px;
+  display: flex;
+  align-items: end;
+}
+
+.discover-footer .discover-footer-wrapper ul {
+  display: flex;
+}
+
+.discover-footer .discover-footer-wrapper ul li {
+  list-style-type: none;
+  margin: 3px 3px;
+}
+
+@import url("https://fonts.cdnfonts.com/css/made-sunflower");

@@ -15,7 +15,7 @@
   <section class="container bgcontL">
     <section class="navbar">
       <div class="navbar-head">
-        <a href="post-fixed/.." class="head-text text-change2 text2-default">Ryunify.</a>
+        <a href="../" class="head-text text-change2 text2-default">Ryunify.</a>
       </div>
       <div class="navbar-content">
         <ul>
@@ -26,7 +26,8 @@
                 class="icon icon-default"
               />
             </svg>
-            <a class="text-change2 text2-default" href="post-fixed/..">Home</a>
+            <a class="text-change2 text2-default" href="../"
+              >Home</a>
           </li>
           <li>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +45,7 @@
                 class="icon icon-default"
               />
             </svg>
-            <a class="text-change2 text2-default" href="following/">Following</a>
+            <p><strong>Following</strong></p>
           </li>
           <li>
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,6 +69,13 @@
       </div>
       <div class="navbar-footer">
         <ul>
+          <li>
+            <a href="../profile-fixed/">
+              <svg onclick="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12C15.3141 12 18 9.31406 18 6C18 2.68594 15.3141 0 12 0C8.68594 0 6 2.68594 6 6C6 9.31406 8.68594 12 12 12ZM16.2 13.5H15.4172C14.3766 13.9781 13.2188 14.25 12 14.25C10.7812 14.25 9.62813 13.9781 8.58281 13.5H7.8C4.32187 13.5 1.5 16.3219 1.5 19.8V21.75C1.5 22.9922 2.50781 24 3.75 24H20.25C21.4922 24 22.5 22.9922 22.5 21.75V19.8C22.5 16.3219 19.6781 13.5 16.2 13.5Z" class="icon icon-default"/>
+                </svg>
+            </a>              
+          </li>
           <li onclick="toggleMode()" style="cursor: pointer">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -92,23 +100,51 @@
     <section class="main">
       <section class="banner">
         <div class="nav-banner">
-          <a class="text-change2 text2-default" href="post-fixed/">Posts</a>
-          <div class="point point-default"></div>
+            <a class="text-change2 text2-default" href="../following/">Following</a>
+            <div class="point point-default"></div>
         </div>
-        <div class="nav-banner"><a class="text-change2 text2-default" href="qna-fixed/">QnAs</a></div>
-        <div class="nav-banner"><a class="text-change2 text2-default" href="alert-fixed/">Alerts</a></div>
+        <div class="nav-banner"><a class="text-change2 text2-default" href="../followers/">Followers</a></div>
+        <div class="nav-banner"><a class="text-change2 text2-default" href="../topics/">Topics</a></div>
       </section>
       <section class="region">
-        <div class="search-region">
-          <div class="user"></div>
-          <div class="input-search-region">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.33594 5.42146C4.94362 5.53235 4.58437 5.7375 4.28949 6.01903C3.99462 6.30056 3.77307 6.64993 3.64414 7.03669L0 17.9687L0.573828 18.5426L6.4375 12.6789C6.3207 12.4344 6.25 12.164 6.25 11.875C6.25 10.8394 7.08945 9.99998 8.125 9.99998C9.16055 9.99998 10 10.8394 10 11.875C10 12.9105 9.16055 13.75 8.125 13.75C7.83594 13.75 7.56562 13.6793 7.32109 13.5625L1.45742 19.4261L2.03125 20L12.9633 16.3558C13.35 16.2269 13.6994 16.0054 13.9809 15.7105C14.2625 15.4156 14.4676 15.0564 14.5785 14.664L16.25 8.74998L11.25 3.74998L5.33594 5.42146ZM19.4508 2.89724L17.1027 0.549194C16.3703 -0.183228 15.1824 -0.183228 14.45 0.549194L12.241 2.75818L17.2418 7.75896L19.4508 5.54998C20.1832 4.81755 20.1832 3.63005 19.4508 2.89724Z"
-                fill="gray  "
-              />
-            </svg>
-            <input type="text" placeholder="What's up, AbangSepuh?" />
+        <div class="following-container">
+          <div class="scrolling-wrapper">
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">lilentityy</div>
+            </div>
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">mh4sa7134</div>
+            </div>
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">axhellyn</div>
+            </div>
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">uzumakikontoru666</div>
+            </div>
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">otatil</div>
+            </div>
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">moziee</div>
+            </div>
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">Userlain</div>
+            </div>
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">Userlain</div>
+            </div>
+            <div class="following-item">
+              <div class="followed-user"></div>
+              <div class="followed-username">Userlain</div>
+            </div>
           </div>
         </div>
         <div class="article">
@@ -117,8 +153,7 @@
               <div class="user"></div>
               <div class="text-user">
                 <div class="id-user">
-                  <div class="id"><a class="text-change2 text2-default" href="profile-fixed/" style="color: white"
-                    >LilEntity</a></div>
+                  <div class="id"><a href="../profile-fixed/" style="color: white;">LilEntity</a></div>
                   <div class="tag">@lilentityy</div>
                 </div>
                 <div class="act-user">Listening to Spotify</div>
@@ -132,7 +167,7 @@
             </svg>
           </div>
           <div class="content-article">
-            <strong>How not to become pusing tujuh keliling?</strong>
+            <strong>Ini adalah sebuah post tentang saya</strong>
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat in neque eget tincidunt. Vestibulum ac lectus non neque viverra vestibulum. Phasellus eu laoreet mi, et tristique quam. Proin eleifend sagittis semper. Nunc
             a tincidunt enim. Cras tincidunt commodo tempus. Sed blandit, diam quis blandit cursus, neque enim rhoncus diam, non pellentesque libero risus ac ex. Proin sagittis quam et porta consectetur. Phasellus suscipit, libero sit amet
@@ -240,14 +275,13 @@
               <div class="user"></div>
               <div class="text-user">
                 <div class="id-user">
-                  <div class="id"><a class="text-change2 text2-default" href="profile-fixed/" style="color: white"
-                    >LilEntity</a></div>
+                  <div class="id"><a href="../profile-fixed/" style="color: white">LilEntity</a></div>
                   <div class="tag">@lilentityy</div>
                 </div>
                 <div class="act-user">Listening to Spotify</div>
               </div>
             </div>
-            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M1.47072 3.43147H20.103C20.4988 3.43147 20.8197 3.11121 20.8197 2.71611V0.927703C20.8197 0.5326 20.4988 0.212341 20.103 0.212341H1.47072C1.07491 0.212341 0.754089 0.5326 0.754089 0.927703V2.71611C0.754089 3.11121 1.07491 3.43147 1.47072 3.43147ZM1.47072 10.5851H20.103C20.4988 10.5851 20.8197 10.2648 20.8197 9.86972V8.08132C20.8197 7.68621 20.4988 7.36596 20.103 7.36596H1.47072C1.07491 7.36596 0.754089 7.68621 0.754089 8.08132V9.86972C0.754089 10.2648 1.07491 10.5851 1.47072 10.5851ZM1.47072 17.7387H20.103C20.4988 17.7387 20.8197 17.4184 20.8197 17.0233V15.2349C20.8197 14.8398 20.4988 14.5196 20.103 14.5196H1.47072C1.07491 14.5196 0.754089 14.8398 0.754089 15.2349V17.0233C0.754089 17.4184 1.07491 17.7387 1.47072 17.7387Z"
                 fill="white"
