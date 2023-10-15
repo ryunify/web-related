@@ -130,7 +130,9 @@ let upvote = true;
 region.addEventListener("click", (e) => {
   if (upvote) {
     e.target.childNodes[3].innerHTML++;
-    console.log(e.target.childNodes[1].childNodes[1].getAttribute("fill"));
     upvote = false;
-  } 
+  } else {
+    e.target.childNodes[3].innerHTML--;
+    upvote = true;
+  }
 });
