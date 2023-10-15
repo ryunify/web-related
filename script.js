@@ -171,4 +171,5 @@ region.addEventListener("click", function (e) {
       }
     }
   }
+
 });
