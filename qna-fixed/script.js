@@ -125,7 +125,12 @@ function toggleMode() {
 }
 
 const region = document.querySelector(".region");
+let upvote = true;
 
 region.addEventListener("click", (e) => {
-  e.target.childNodes[3].innerHTML++;
+  if (upvote) {
+    e.target.childNodes[3].innerHTML++;
+    console.log(e.target.childNodes[1].childNodes[1].getAttribute("fill"));
+    upvote = false;
+  } 
 });
