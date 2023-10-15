@@ -109,28 +109,6 @@ function toggleMode() {
     }
   });
 
-  let love = document.querySelectorAll(".love");
-  let stop = document.querySelectorAll(".break");
-
-  love.forEach(function (e) {
-    if (e.classList.contains("love")) {
-      e.classList.add("break");
-      e.classList.remove("love");
-    } else {
-      e.classList.add("love");
-      e.classList.remove("break");
-    }
-  });
-
-  stop.forEach(function (e) {
-    if (e.classList.contains("love")) {
-      e.classList.add("break");
-      e.classList.remove("love");
-    } else {
-      e.classList.add("love");
-      e.classList.remove("break");
-    }
-  });
 }
 
 const region = document.querySelector(".region");
