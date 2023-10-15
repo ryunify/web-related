@@ -125,14 +125,26 @@ function toggleMode() {
 }
 
 const region = document.querySelector(".region");
-let upvote = true;
 
 region.addEventListener("click", (e) => {
-  if (upvote) {
-    e.target.childNodes[3].innerHTML++;
-    upvote = false;
-  } else {
-    e.target.childNodes[3].innerHTML--;
-    upvote = true;
-  }
+  if (e.target.classList.contains("upvote")) {
+      if (e.target.childNodes[3].classList.contains("upvoteOn")) {
+        e.target.childNodes[3].innerHTML++;
+        e.target.childNodes[3].style.fontWeight = "600";
+        e.target.childNodes[3].classList.toggle("upvoteOn");
+      } else {
+        e.target.childNodes[3].innerHTML--;
+        e.target.childNodes[3].style.fontWeight = "300";
+        e.target.childNodes[3].classList.toggle("upvoteOn");
+      }
+  } else if (e.target.classList.contains("upvote-value")) {
+    if (e.target.classList.contains("upvoteOn")) {
+      e.target.innerHTML++;
+      e.target.style.fontWeight = "600";
+      e.target.classList.toggle("upvoteOn");
+    } else {
+      e.target.innerHTML--;
+      e.target.classList.toggle("upvoteOn");
+    }
+} 
 });
