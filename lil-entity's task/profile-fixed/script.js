@@ -1,7 +1,13 @@
 let isImageBackground = true;
 
-function replaceLogo() {
-  document.getElementsByClassName("logo-text").innerText = "Ry.";
+function removeSvgFromInputBar() {
+  const placeholderSVG = document.getElementsByClassName("placeholder-svg");
+  placeholderSVG[0].style.display = "none";
+}
+
+function addSvgToInputBar() {
+  const placeholderSVG = document.getElementsByClassName("placeholder-svg");
+  placeholderSVG[0].style.display = "block";
 }
 
 function toggleMode() {
