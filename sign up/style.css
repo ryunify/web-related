@@ -1,0 +1,205 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(henry-be-TCsCykbwSJw-unsplash\ 1\ \(1\).png);
+    font-family: 'Poppins';
+}
+
+.login-page{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(70,70,70,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-login{
+    height: 628px;
+    width: 830px;
+    background-color: rgba(32,20,13,0.5);
+    border-radius: 15px;
+    border: 2px solid rgba(152,152,152,0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wrapper{
+    width:500px;
+    height:auto;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.head-text{
+    font-size: 60px;
+    font-family: 'MADE Sunflower', sans-serif;            
+}
+
+.head-text:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, red, orange, yellow, greenyellow,aqua, blue,rgb(153, 0, 255),rgb(255, 0, 140));   
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+    background-size: 200% auto;     
+    animation: rainbow 2s linear infinite;
+}
+
+@keyframes rainbow{
+    0%{
+        background-position: -100% 0%;
+    }
+
+    100%{
+        background-position: 100% 0%;
+    }
+
+}
+
+.body-text{
+    font-size: 14px;
+}
+
+.input-user{
+    width: 473px;
+    height: 38px;
+    background-color:#121212;
+    border:1px solid #808080;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    padding-left: 17px;
+    padding-right: 17px;
+    font-weight: 500; 
+    color: white;
+    margin: 10px 0
+}
+
+::-ms-reveal {
+    filter: invert(100%);
+  }
+
+/* .input-user:focus{
+    border: none;
+} */
+
+.forget-password{
+    font-size: 12px; 
+    color: #DC9E56;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.forget-password:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.button-login{
+    width: 507px;
+    height: 38px;
+    background-color: rgba(220, 158, 86, 0.35);
+    border:1px solid #808080;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    padding-left: 17px;
+    padding-right: 17px;
+    font-weight: 500; 
+    color: white;
+    margin: 10px 0;
+    margin-top: 30px;
+}
+
+.button-login:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.buttons{
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.another-login-button{
+    width: 216px;
+    height: 38px;
+    background-color:#121212;
+    border:1px solid #808080;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10px 0; */
+}
+
+.another-login-button:hover{
+    background-color: rgba(220, 158, 86, 0.35);
+    cursor: pointer;
+}
+
+.another-login-button svg{
+    margin-right: 10px;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 7px 0; */
+}
+
+.line{
+    height: 2px;
+    width: 215.5px;
+    background-color: #7C7C7C;
+}
+
+.footer-login{
+    width: 865px;
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}
+
+.footer-login ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-login ul li{
+    font-size: 15px;
+    color: #BBBBBB;
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.footer-login ul li:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+@import url('https://fonts.cdnfonts.com/css/made-sunflower');
+
+                
