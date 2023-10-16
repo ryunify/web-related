@@ -1,7 +1,23 @@
 let isImageBackground = true;
 
+const input = document.querySelector(".input-search");
+
+input.addEventListener("input", (event) => {
+  if (document.body.classList.contains("dark-mode")) {
+    input.style.color = event.target.value ? "white" : "black";
+  } else {
+    input.style.color = event.target.value ? "black" : "white";
+  }
+});
+
 function toggleMode() {
   var body = document.body;
+
+  if (document.body.classList.contains("dark-mode")) {
+    input.style.color = event.target.value ? "white" : "black";
+  } else {
+    input.style.color = event.target.value ? "black" : "white";
+  }
 
   let cont = document.querySelector(".kontainer");
 
@@ -165,6 +181,30 @@ region.addEventListener("click", function (e) {
       if (e.target.classList.contains("loveOnL")) {
         e.target.classList.remove("loveOnL");
       }
+    }
+  }
+  if (e.target.classList.contains("dropBtn")) {
+    console.log(e.target);
+    if (e.target.classList.contains("btnOn")) {
+      e.target.classList.remove("btnOn");
+      e.target.nextElementSibling.style.display = "flex";
+      e.target.parentNode.style.top = "78px";
+    } else {
+      e.target.classList.add("btnOn");
+      e.target.nextElementSibling.style.display = "none";
+      e.target.parentNode.style.top = "0px";
+    }
+  } 
+  if (e.target.classList.contains("pathdropBtn")) {
+    console.log(e.target.parentNode);
+    if (e.target.parentNode.classList.contains("btnOn")) {
+      e.target.parentNode.classList.remove("btnOn");
+      e.target.parentNode.nextElementSibling.style.display = "flex";
+      e.target.parentNode.parentNode.style.top = "78px";
+    } else {
+      e.target.parentNode.classList.add("btnOn");
+      e.target.parentNode.nextElementSibling.style.display = "none";
+      e.target.parentNode.parentNode.style.top = "0px";
     }
   }
 });

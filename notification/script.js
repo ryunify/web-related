@@ -1,7 +1,23 @@
 let isImageBackground = true;
 
+const input = document.querySelector(".input-search");
+
+input.addEventListener("input", (event) => {
+  if (document.body.classList.contains("dark-mode")) {
+    input.style.color = event.target.value ? "white" : "black";
+  } else {
+    input.style.color = event.target.value ? "black" : "white";
+  }
+});
+
 function toggleMode() {
   var body = document.body;
+
+  if (document.body.classList.contains("dark-mode")) {
+    input.style.color = event.target.value ? "white" : "black";
+  } else {
+    input.style.color = event.target.value ? "black" : "white";
+  }
 
   let cont = document.querySelector(".kontainer");
 
