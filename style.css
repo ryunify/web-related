@@ -290,7 +290,12 @@ body {
 }
 
 .article .dropdown-article .dropBtn {
-  background-color: #693500;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.article .dropdown-article button {
+  border: 0;
 }
 
 .article .dropdown-content {

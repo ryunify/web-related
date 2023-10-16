@@ -172,14 +172,27 @@ region.addEventListener("click", function (e) {
     }
   }
   if (e.target.classList.contains("dropBtn")) {
-    console.log(e.target.childNodes[1]);
+    console.log(e.target);
     if (e.target.classList.contains("btnOn")) {
       e.target.classList.remove("btnOn");
       e.target.nextElementSibling.style.display = "flex";
-      e.target.style.top = "0px";
+      e.target.parentNode.style.top = "78px";
     } else {
       e.target.classList.add("btnOn");
       e.target.nextElementSibling.style.display = "none";
+      e.target.parentNode.style.top = "0px";
     }
   } 
+  if (e.target.classList.contains("pathdropBtn")) {
+    console.log(e.target.parentNode);
+    if (e.target.parentNode.classList.contains("btnOn")) {
+      e.target.parentNode.classList.remove("btnOn");
+      e.target.parentNode.nextElementSibling.style.display = "flex";
+      e.target.parentNode.parentNode.style.top = "78px";
+    } else {
+      e.target.parentNode.classList.add("btnOn");
+      e.target.parentNode.nextElementSibling.style.display = "none";
+      e.target.parentNode.parentNode.style.top = "0px";
+    }
+  }
 });
