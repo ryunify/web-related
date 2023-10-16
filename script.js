@@ -171,5 +171,15 @@ region.addEventListener("click", function (e) {
       }
     }
   }
-
+  if (e.target.classList.contains("dropBtn")) {
+    console.log(e.target.childNodes[1]);
+    if (e.target.classList.contains("btnOn")) {
+      e.target.classList.remove("btnOn");
+      e.target.nextElementSibling.style.display = "flex";
+      e.target.style.top = "0px";
+    } else {
+      e.target.classList.add("btnOn");
+      e.target.nextElementSibling.style.display = "none";
+    }
+  } 
 });
