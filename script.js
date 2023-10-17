@@ -1,25 +1,19 @@
 let isImageBackground = true;
 
-const input = document.querySelector(".input-search");
+function removeSvgFromInputBar(index) {
+  const placeholderSVG = document.getElementsByClassName("placeholder-svg");
+  placeholderSVG[index].style.display = "none";
+}
 
-input.addEventListener("input", (event) => {
-  if (document.body.classList.contains("dark-mode")) {
-    input.style.color = event.target.value ? "white" : "black";
-  } else {
-    input.style.color = event.target.value ? "black" : "white";
-  }
-});
+function addSvgToInputBar(index) {
+  const placeholderSVG = document.getElementsByClassName("placeholder-svg");
+  placeholderSVG[index].style.display = "block";
+}
 
 function toggleMode() {
   var body = document.body;
 
-  if (document.body.classList.contains("dark-mode")) {
-    input.style.color = event.target.value ? "white" : "black";
-  } else {
-    input.style.color = event.target.value ? "black" : "white";
-  }
-
-  let cont = document.querySelector(".container");
+  let cont = document.querySelector(".kontainer");
 
   if (cont.classList.contains("bgcontL")) {
     cont.classList.add("bgcontD");
@@ -49,6 +43,18 @@ function toggleMode() {
     } else {
       icon.classList.remove("icon-alternative");
       icon.classList.add("icon-default");
+    }
+  });
+
+  var iconStrokes = document.querySelectorAll(".icon-stroke");
+
+  iconStrokes.forEach(function (icon) {
+    if (icon.classList.contains("icon-stroke-default")) {
+      icon.classList.remove("icon-stroke-default");
+      icon.classList.add("icon-stroke-alternative");
+    } else {
+      icon.classList.remove("icon-stroke-alternative");
+      icon.classList.add("icon-stroke-default");
     }
   });
 
@@ -140,6 +146,18 @@ function toggleMode() {
       text2.classList.add("text2-default");
     }
   });
+
+  var tampilGaris = document.querySelectorAll(".garis");
+
+  tampilGaris.forEach(function (garis) {
+    if (garis.classList.contains("garisL")) {
+      garis.classList.remove("garisL");
+      garis.classList.add("garisD");
+    } else {
+      garis.classList.remove("garisD");
+      garis.classList.add("garisL");
+    }
+  });
 }
 
 const region = document.querySelector(".region");
@@ -169,30 +187,6 @@ region.addEventListener("click", function (e) {
       if (e.target.classList.contains("loveOnL")) {
         e.target.classList.remove("loveOnL");
       }
-    }
-  }
-  if (e.target.classList.contains("dropBtn")) {
-    console.log(e.target);
-    if (e.target.classList.contains("btnOn")) {
-      e.target.classList.remove("btnOn");
-      e.target.nextElementSibling.style.display = "flex";
-      e.target.parentNode.style.top = "78px";
-    } else {
-      e.target.classList.add("btnOn");
-      e.target.nextElementSibling.style.display = "none";
-      e.target.parentNode.style.top = "0px";
-    }
-  } 
-  if (e.target.classList.contains("pathdropBtn")) {
-    console.log(e.target.parentNode);
-    if (e.target.parentNode.classList.contains("btnOn")) {
-      e.target.parentNode.classList.remove("btnOn");
-      e.target.parentNode.nextElementSibling.style.display = "flex";
-      e.target.parentNode.parentNode.style.top = "78px";
-    } else {
-      e.target.parentNode.classList.add("btnOn");
-      e.target.parentNode.nextElementSibling.style.display = "none";
-      e.target.parentNode.parentNode.style.top = "0px";
     }
   }
 });
