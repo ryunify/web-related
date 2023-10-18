@@ -3,570 +3,202 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
+  box-sizing: 0;
 }
 
-::-webkit-scrollbar {
-  width: 0;
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  background: url(supply/henry-be-TCsCykbwSJw-unsplash\ 1\ \(1\).png);
+}
+
+.login-page {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(70, 70, 70, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-login {
+  height: 628px;
+  width: 830px;
+  background-color: rgba(32, 20, 13, 0.5);
+  border-radius: 15px;
+  border: 2px solid rgba(152, 152, 152, 0.07);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrapper {
+  width: 500px;
+  height: auto;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.head-text {
+  font-size: 60px;
+  font-family: "MADE Sunflower", sans-serif;
 }
 
 .head-text:hover {
-  display: inline-block;
-  background-image: linear-gradient(to left, red, orange, yellow, green, aqua, blue, purple);
-  background-size: 200% auto;
-  color: transparent;
-  background-clip: text;
+  cursor: pointer;
+  background: linear-gradient(to left, red, orange, yellow, greenyellow, aqua, blue, rgb(153, 0, 255), rgb(255, 0, 140));
   -webkit-background-clip: text;
-  animation: rainbow 2s infinite linear;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: rainbow 2s linear infinite;
 }
 
 @keyframes rainbow {
   0% {
     background-position: -100% 0%;
   }
+
   100% {
     background-position: 100% 0%;
   }
 }
 
-a {
-  text-decoration: none;
+.body-text {
+  font-size: 14px;
 }
 
-.text2-default {
-  color: black;
-}
-
-.text2-alternative {
-  color: white;
-}
-
-.point-default {
-  background-color: #693500;
-}
-
-.point-alternative {
-  background-color: #efd1a6;
-}
-
-.discover-default {
-  background-color: white;
-}
-
-.discover-alternative {
-  background-color: #272727;
-}
-
-body.light-mode {
-  color: black;
-}
-
-body.dark-mode {
-  color: white;
-}
-
-.icon {
-  margin-right: 10px;
-}
-
-.icon-default {
-  fill: black;
-}
-
-.icon-alternative {
-  fill: white;
-}
-
-.love {
-  cursor: pointer;
-  stroke: black;
-}
-
-.break {
-  stroke: white;
-  cursor: pointer;
-}
-
-.loveOnL {
-  fill: black;
-}
-
-.loveOnD {
-  fill: white;
-}
-
-.loveOff {
-  fill: transparent;
-}
-
-body {
-  background-image: url(../supply/background-qna.jpeg);
-  background-attachment: fixed;
-  background-size: cover;
-  /* background-color: aqua; */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+.input-user {
+  width: 473px;
+  height: 38px;
+  background-color: #121212;
+  border: 1px solid #808080;
+  border-radius: 15px;
   font-family: "Poppins";
-  transition: background 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
-.bgcontD {
-  background-color: rgba(0, 0, 0, 0.85);
-} 
-
-.bgcontL {
-  background-color: rgba(255, 255, 255, 0);
-} 
-
-.banner {
-  width: 610px;
-  height: 104px;
-  background-color: rgba(255, 181, 106, 0.35);
-  font-family: "Poppins";
+  padding-left: 17px;
+  padding-right: 17px;
   font-weight: 500;
-  font-size: 20px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 0 50px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  margin: auto;
+  color: white;
+  margin: 10px 0;
 }
 
-.banner a {
-  text-decoration: none;
+::-ms-reveal {
+  filter: invert(100%);
 }
 
-.banner .point {
-  width: 75px;
-  height: 5px;
-  border-radius: 10px 10px 0 0;
-}
-
-.banner .nav-banner {
-  text-align: center;
-  height: 50%;
-  width: 100%; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-}
-
-/* .banner .nav-banner:hover{
-  background-color: #ffffff34;
-  border-radius: 5px;
+/* .input-user:focus{
+    border: none;
 } */
 
-.nav-banner {
-  text-decoration: none;
-  position: relative;
-}
-
-.nav-banner::before {
-  content: '';
-  background-color: rgba(255, 255, 255, 0.142);
-  border-radius: 5px;
-  position: absolute;
-  left: 0;
-  bottom: 3px;
-  width: 100%;
-  height: 0px;
-  z-index: -1;
-}
-
-.nav-banner:hover::before {
-  bottom: 0;
-  height: 100%;
-}
-
-.nav-banner::before {
-  content: '';
-  background-color: rgba(255, 255, 255, 0.142);
-  border-radius: 5px;
-  position: absolute;
-  left: 0;
-  bottom: 3px;
-  width: 100%;
-  height: 0px;
-  z-index: -1;
-  transition: all .3s ease-in-out;
-}
-
-.region {
-  overflow-y: scroll;
-  width: 610px;
-  height: 664px;
-  margin: auto;
-  box-sizing: border-box;
-  padding-top: 28px;
-}
-
-.region .search-region {
-  width: 535px;
-  height: 66px;
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  box-sizing: border-box;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.user {
-  width: 40px;
-  height: 40px;
-  border-radius: 25px;
-  background-color: #d9d9d9;
-  margin: 0 30px;
-}
-
-.region .search-region .input-search-region {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.region .search-region .input-search-region input {
-  width: 90%;
-  height: 90%;
-  border: 0;
-  margin-left: 10px;
-  font-weight: 500;
-  outline: none;
-  font-size: 20px;
-}
-
-.article {
-  width: 535px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-family: "Poppins";
-  box-sizing: border-box;
-  border-radius: 10px 10px 0 0;
-}
-
-.article .user-article {
-  width: 535px;
-  height: 66px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background-image: url(../supply/kobo\ scene\ 1\ cut.png);
-  background-attachment: fixed;
-  background-size: cover;
-  border-radius: 10px;
-  padding: 0 20px 0 0;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.article .dropdown-article {
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position:relative;
-  top: 0px;
-  left: 40px;
-  box-sizing: border-box;
-}
-
-.article .dropdown-article .dropBtn {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.article .dropdown-article button {
-  border: 0;
-}
-
-.article .dropdown-content {
-  padding-top: 10px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  position: relative;
-  right: 40px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-  display: none;
-}
-
-.article .dropdown-content a {
-  margin-bottom: 10px;
-  color: black;
-}
-
-.article .username {
-  display: flex;
-  color: #d4d4d4;
-}
-
-.article .id-user {
-  display: flex;
-  align-items: center;
-}
-
-.article .id-user .id {
-  margin-right: 10px;
-  color: white;
-}
-
-.footer-article {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.footer-article .attach {
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.navbar {
-  height: 100vh;
-  width: 240px;
-  margin-left: 72px;
-  border-right: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.navbar-head {
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.head-text {
-  font-size: 30px;
-  font-family: "MADE Sunflower", sans-serif;
-}
-
-.navbar-content {
-  height: 60vh;
-  display: flex;
-  flex-direction: row;
-}
-
-.navbar-content ul li {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-.navbar-content ul li:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 20px;
-}
-
-.navbar-content ul li p {
-  margin-left: 15px;
-}
-
-.navbar-content ul li a {
-  margin-left: 15px;
-}
-
-.navbar-content a {
-  transition: color 0.5s ease-in-out;
-}
-
-.navbar-footer {
-  height: 20vh;
-  display: flex;
-  align-items: end;
-  flex-direction: row;
-}
-
-.navbar-footer ul li {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-.navbar-footer ul li p {
-  margin-left: 15px;
-}
-
-.discover {
-  height: 100vh;
-  width: 372px;
-  margin-right: 72px;
-  /* background-color:red; */
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.discover-header {
-  margin: 15px;
-}
-
-.discover-input {
-  width: 297px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.discover-input svg {
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-.input-search {
-  width: 230px;
-  height: 38px;
-  border: none;
-  font-size: 20px;
-}
-
-.input-search:focus {
-  outline: none;
-}
-
-.discover-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.discover-notifications {
-  width: 297px;
-  min-height: 102px;
-  border-radius: 15px;
-  margin-top: 10px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.discover-notifications-wrapper {
-  margin: 17px;
-}
-
-.head-notifications-text {
-  /* margin-top:10px; */
-  font-size: 23px;
-  padding-left: 10px;
-}
-
-.text-default {
-  color: #c58f44;
-}
-
-.text-alternative {
-  color: #efd1a6;
-}
-
-.notifications-text {
-  margin-top: 17px;
-  padding-left: 10px;
-  font-size: 15px;
-  color: gray;
-}
-
-.discover-acc {
-  width: 297px;
-  margin: 25px;
-  min-height: 397px;
-  border-radius: 15px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.discover-acc-wrapper {
-  margin: 17px;
-}
-
-.profile-wrapper {
-  margin-top: 7px;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding: 10px;
-}
-
-.profile-img {
-  width: 37px;
-  height: 37px;
-  background-color: #d9d9d9;
-  border-radius: 10px;
-}
-
-.profile-text {
-  margin-left: 10px;
-}
-
-.profile-username {
-  display: flex;
-  align-items: center;
-}
-
-.disname {
-  font-size: 15;
-}
-
-.username {
-  font-size: 13px;
-}
-
-.profile-details {
+.forget-password {
   font-size: 12px;
+  color: #dc9e56;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
-.discover-footer {
-  width: 297px;
-  height: 150px;
-  margin-bottom: 20px;
+.forget-password:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
 }
 
-.discover-footer-wrapper {
-  height: 150px;
+.button-login {
+  width: 507px;
+  height: 38px;
+  background-color: rgba(220, 158, 86, 0.35);
+  border: 1px solid #808080;
+  border-radius: 15px;
+  font-family: "Poppins";
+  padding-left: 17px;
+  padding-right: 17px;
+  font-weight: 500;
+  color: white;
+  margin: 10px 0;
+  margin-top: 30px;
+}
+
+.button-login:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.buttons {
+  width: 500px;
   display: flex;
-  align-items: end;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.discover-footer .discover-footer-wrapper ul {
+.another-login-button {
+  width: 216px;
+  height: 38px;
+  background-color: #121212;
+  border: 1px solid #808080;
+  border-radius: 15px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10px 0; */
 }
 
-.discover-footer .discover-footer-wrapper ul li {
+.another-login-button:hover {
+  background-color: rgba(220, 158, 86, 0.35);
+  cursor: pointer;
+}
+
+.another-login-button svg {
+  margin-right: 10px;
+}
+
+.or {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin: 7px 0; */
+}
+
+.line {
+  height: 2px;
+  width: 215.5px;
+  background-color: #7c7c7c;
+}
+
+.footer-login {
+  width: 865px;
+  display: flex;
+  justify-content: start;
+  margin: 10px;
+}
+
+.footer-login ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-login ul li {
+  font-size: 15px;
+  color: #bbbbbb;
   list-style-type: none;
-  margin: 3px 3px;
+  margin: 0 10px;
+}
+
+.footer-login ul li:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
 }
 
 @import url("https://fonts.cdnfonts.com/css/made-sunflower");
