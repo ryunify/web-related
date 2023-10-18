@@ -29,7 +29,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
 
         signInWithEmailAndPassword(auth, obj.email, obj.password)
           .then(function (success) {
-            document.getElementById("login-form").reset();
+            // document.getElementById("login-form").reset();
             popup.style.display = "block";
             setTimeout(function() {
               window.location.replace("../post-fixed/");
