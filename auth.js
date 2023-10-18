@@ -36,6 +36,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
       createUserWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function (success) {
           document.getElementById("signup-form").reset();
+          popup.childNodes[1].childNodes[0].innerHTML = "Selamat !";
+          popup.childNodes[3].innerHTML = "akun anda telah dibuat."
           popup.style.display = "block";
           setTimeout(function() {
             window.location.replace("login/");
