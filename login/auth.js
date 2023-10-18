@@ -32,7 +32,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
             // document.getElementById("login-form").reset();
             popup.style.display = "block";
             setTimeout(function() {
-              window.location.replace("../post-fixed/");
+              window.location.replace("../for-you-updated/");
             }, 2000);
           })
           .catch(function (error) {
