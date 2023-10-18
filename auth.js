@@ -31,14 +31,32 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
         password: password.value,
       };
 
+      const popup = document.querySelector(".popup");
+
       createUserWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function (success) {
-          alert("boleee");
           document.getElementById("signup-form").reset();
-          window.location.replace("login/");
+          alert("hai");
+          popup.style.display = "block";
+          setTimeout(function() {
+            window.location.replace("login/");
+          }, 2000);
+          // window.location.replace("login/");
         })
         .catch(function (error) {
-          alert("yh bg");
+          const errorMessage = error.message;
+          console.log(error.message);
+          popup.childNodes[1].childNodes[0].innerHTML = "Error !";
+          if (errorMessage == "Firebase: Error (auth/invalid-email).") {
+            popup.childNodes[3].innerHTML = "Email Anda Salah."
+            popup.style.display = "block";
+          } else if (errorMessage == "Firebase: Password should be at least 6 characters (auth/weak-password).") {
+            popup.childNodes[3].innerHTML = "Password Anda Salah."
+            popup.style.display = "block";
+          }
+          setTimeout(function() {
+            popup.style.display = "none";
+          }, 2000);
         });
 
       console.log(obj);

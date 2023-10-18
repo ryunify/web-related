@@ -161,6 +161,21 @@ body {
   margin-right: 10px;
 }
 
+.popup {
+  width: 350px;
+  height: 150px;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+  display: none;
+}
+
 .or {
   display: flex;
   flex-direction: row;

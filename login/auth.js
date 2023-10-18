@@ -25,16 +25,31 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
           password: password.value,
         };
 
+        const popup = document.querySelector(".popup");
+
         signInWithEmailAndPassword(auth, obj.email, obj.password)
           .then(function (success) {
-            alert("boleee");
-            // document.getElementById("form").reset();
-            document.getElementById("form").reset();
-            window.location.replace("../post-fixed/");
+            document.getElementById("login-form").reset();
+            popup.style.display = "block";
+            setTimeout(function() {
+              window.location.replace("../post-fixed/");
+            }, 2000);
           })
           .catch(function (error) {
-            alert("yh bg");
-            // document.getElementById("form").reset();
+            const errorMessage = error.message;
+            console.log(error.message);
+            popup.childNodes[1].childNodes[0].innerHTML = "Error !"
+            if (errorMessage == "Firebase: Error (auth/invalid-email).") {
+              popup.childNodes[3].innerHTML = "Email Anda Salah."
+              popup.style.display = "block";
+            } else if (errorMessage == "Firebase: Error (auth/invalid-login-credentials).") {
+              popup.childNodes[3].innerHTML = "Password Anda Salah."
+              popup.style.display = "block";
+            }
+            setTimeout(function() {
+              popup.style.display = "none";
+            }, 2000);
+            document.getElementById("form").reset();
           });
 
         console.log(obj);
