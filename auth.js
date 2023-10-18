@@ -36,7 +36,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
       createUserWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function (success) {
           document.getElementById("signup-form").reset();
-          alert("hai");
           popup.style.display = "block";
           setTimeout(function() {
             window.location.replace("login/");
